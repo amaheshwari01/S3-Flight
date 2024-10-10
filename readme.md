@@ -6,14 +6,17 @@
 
 ## Running the code 
 
-0. Navigate to the
-
-0. Navigate to `~/Projects/My_Experiment/` and double-click `flying.ino`
-0. Connect a development board to your PC using a USB cable
+0. Make sure to complete the [Installation/Setup Guide](setup.md) first and have this reposotory downloaded
+0. Navigate to where you downloaded this repository
+0. Move the Quest_CLI folder outside the current folder and move it to somewhere else where you are keeping your code
+0. Navigate to `~/Projects/Quest_CLI/` and double-click `Quest_CLI.ino`
+0. Connect a development board to your computer using a USB cable
 0. Click "Tools -> Port -> /dev/ttyACM0 (Adafruit ItsyBitsy M4 (SAMD51))"
+    - It may be called something different based on your platform, but one way to check is unplug, see what ports are avalible, and then plug it back in and see the new one that was added
+0. Click "Tools -> Boards -> Adafruit SAMD Boards -> Adafruit ItsyBitsy M4" to set the baord
 0. Click Tools -> Serial Monitor
 0. To the right of the "Message" text box, there is a dropdown menu. If it says "New Line", select "Carrage Return" instead.
-0. Click "Sketch -> Upload" (or press Ctrl+U)
+0. Click "Sketch -> Upload" (or press Ctrl+U or press the arrow at the top of the screen)
 0. Wait a few seconds for the code to compile and upload.
 0. If all goes well, the serial monitor should output something similar to the following:
 
@@ -27,35 +30,3 @@
 
 0. You can now type a `T` and hit `<Enter>` to start test mode. If you don't hit `T` fast enough, hit the RESET button on the development board to reboot and output the prompt again.
 
-
-# Write your own code for your experiment
-
-0. Open the Arduino IDE (If you have not installed it yet, see the section for [Windows](#how-to-install-the-arduino-ide-on-windows) or [Linux](#how-to-install-the-arduino-ide-on-linux)) first
-0. In the Arduino IDE, select "File -> Open"
-0. Navigate to `~/Projects/My_Experiment/` and double-click `flying.ino`
-0. Edit the `Flying()` function in `flying.ino` with your experiment's custom code
-0. Click "Sketch -> Upload" (or press Ctrl+U)
-0. Your custom code will run
-
-
-
-
-0. When running the code you 
-
-0. If you are updating a previously-installed version, you are done. Try building your project's `flying.ino` file in the Arduino IDE.
-0. If this is your first time downloading the software, follow these steps to get the template `flying.ino`:
-0. Make a folder somewhere on your PC to hold your project files. In this example, we will use `~/Projects/My_Experiment`
-0. Make the folder using a file explorer window, or run this command:
-
-        mkdir -p ~/Projects/My_Experiment
-
-0. Copy `flying.ino` and `flying.h` into your project folder
-
-        cp ~/Downloads/0.0.1/flying.ino ~/Downloads/0.0.1/flying.h ~/Projects/My_Experiment/
-
-0. Open the Arduino IDE (If you have not installed it yet, see the section for [Windows](#how-to-install-the-arduino-ide-on-windows) or [Linux](#how-to-install-the-arduino-ide-on-linux)) first
-0. In the Arduino IDE, select "File -> Open"
-0. Navigate to `~/Projects/My_Experiment/` and double-click `flying.ino`
-0. Click "Sketch -> Verify/Compile"
-0. Wait a few seconds - the compilation should complete and output a message "Sketch uses XXX bytes of program..."
-0. Move to the next section

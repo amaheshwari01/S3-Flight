@@ -22,4 +22,3 @@
 0. Close the Settings window and navigate to Boards Manager and search for "Adafruit SAMD Boards" and Install
 0. Now you are all set up and can run the code!
 
-## Running the code 
